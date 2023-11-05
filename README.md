@@ -53,14 +53,17 @@
 ## Mock-Up
 A user can type a search term (in this case, "star wars") in a search box and the results appear:
 
-pic
+![21-mern-homework-demo-01](https://github.com/nava003/ADN_Book_Search_Engine/assets/32070635/cc31789c-ce3e-44ea-b4d9-2a48b5ebef22)
+
 
 The user can save books by clicking "Save This Book!" under each search result:
 
-pic
+![21-mern-homework-demo-02](https://github.com/nava003/ADN_Book_Search_Engine/assets/32070635/fa757e2c-318d-497d-affa-6164843ac086)
+
 
 A user can view their saved books on a separate page:
 
-pic
+![21-mern-homework-demo-03](https://github.com/nava003/ADN_Book_Search_Engine/assets/32070635/d1b41cd9-1180-41e9-991e-d7c6d54471d7)
+
 
 ## Student Results
