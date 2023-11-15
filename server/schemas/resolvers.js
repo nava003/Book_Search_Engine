@@ -34,22 +34,21 @@ const resolvers = {
             return { token, user };
         },
 
-        saveBook: async (parent, { book }, context) => {
+        saveBook: async (parent, { bookInfo }, context) => {
             if (context.user) {
                 return User.findOneAndUpdate(
                     { _id: context.user._id },
-                    { $addToSet: { savedBooks: book }},
-                    { new: true, runValidators: true }
+                    { $addToSet: { savedBooks: bookInfo } },
+                    { new: true }
                 );
             };
-
             throw AuthenticationError;
         },
-        removeBook: async (parent, { book }, context) => {
+        removeBook: async (parent, { bookId }, context) => {
             if (context.user) {
                 return User.findOneAndUpdate(
                     { _id: context.user._id },
-                    { $pull: { savedBooks: book }},
+                    { $pull: { savedBooks: { bookId } }},
                     { new: true }
                 );
             };
